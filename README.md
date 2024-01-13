@@ -1,4 +1,4 @@
-<!-- ![tauri-ui](https://github.com/agmmnn/tauri-ui/assets/16024979/28295bae-8a36-4eff-8c33-2ed2bda82d84) -->
+![tauri-ui](https://github.com/NikitolProject/my-diary-app/assets/demo.jpg)
 
 # My Diary
 
