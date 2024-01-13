@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+
+.ProseMirror-focused {
+  outline: none;
+}
+
+.ProseMirror {
+  white-space: pre-line !important;
+  overflow-y: auto;
+}
+
+.divider {
+  background-color: rgba(#fff, 0.25);
+  height: 1.25rem;
+  margin-left: 0.5rem;
+  margin-right: 0.75rem;
+  width: 1px;
+}
+.menu-item {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  height: 1.75rem;
+  margin-right: 0.25rem;
+  padding: 0.25rem;
+  width: 1.75rem;
+
+  svg {
+    fill: currentColor;
+    height: 100%;
+    width: 100%;
+  }
+
+  &:hover,
+  &.is-active {
+    background-color: #303030;
+  }
+}
+
+/* Give a remote user a caret */
+.collaboration-cursor__caret {
+  border-left: 1px solid #0d0d0d;
+  border-right: 1px solid #0d0d0d;
+  margin-left: -1px;
+  margin-right: -1px;
+  pointer-events: none;
+  position: relative;
+  word-break: normal;
+}
+
+/* Render the username above the caret */
+.collaboration-cursor__label {
+  border-radius: 3px 3px 3px 0;
+  color: #0d0d0d;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  left: -1px;
+  line-height: normal;
+  padding: 0.1rem 0.3rem;
+  position: absolute;
+  top: -1.4em;
+  user-select: none;
+  white-space: nowrap;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+
+  ul {
+    list-style: disc !important;
+    padding: 0 2rem;
+  }
+
+  ol {
+    list-style: decimal !important;
+    padding: 0 2rem;
+  }
+}
