@@ -175,8 +175,8 @@ $RECYCLE.BIN/
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
-
 .vscode/
+src-tauri/.vscode/
 
 # Rust build
 src-tauri/target

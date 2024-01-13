@@ -25,7 +25,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.yourname.dev",
+      "identifier": "com.nikitolproject.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
